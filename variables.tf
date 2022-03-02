@@ -23,15 +23,7 @@ variable "tag_name" {
   default     = "terraform-sha"
 }
 
-variable "ami" {
-  type = "map"
-
-  default = {
-    "us-east-1" = "ami-04169656fea786776"
-    "us-west-1" = "ami-006fce2a9625b177f"
-  }
-}
-
-variable "instance_count" {
-  default = "2"
+variable "ami_id" {
+  description = "AMI for Ubuntu Ec2 instance"
+  default     = "ami-0b9064170e32bde34"
 }
