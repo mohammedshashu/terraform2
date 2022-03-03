@@ -20,7 +20,7 @@ variable "security_group" {
 
 variable "tag_name" {
   description = "Tag Name of for Ec2 instance"
-  default     = "terraform-sha"
+  default     = "SRM-terraform"
 }
 
 variable "ami_id" {
